@@ -17,22 +17,20 @@
             <img src="./468-thumbnail.png" alt="" class="song-img">
             <h1>Tu hai to mujhe aur  fir kya chahiye</h1>
             <p>Arijit singh</p>
-            <audio controls>
+            <audio >
                 <source src="media/Go-NEFFEX.mp3" type="audio/mpeg">
             </audio>
             <input type="range" value="0" id="progress">
-            <div class="control">
+            <div class="control" id="song">
                 <div><i class="fa-solid fa-backward"></i></div>
-                <div><i class="fa-solid fa-play"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
                 <div><i class="fa-solid fa-forward"></i></div>
             </div>
          
         </div>
     </div>
 </body>
-<script>
-    const angleLeft=document.querySelector('.fa-angle-left')
-
-    const bar=document.querySelector('.fa-bar')
+<script src="./index.js">
+    
 </script>
 </html>
